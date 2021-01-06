@@ -1,0 +1,80 @@
+Build a Personal Portfolio Webpage
+
+
+1 - Pagina de bienvenida / id="welcome-section"
+
+2 - Pagina de bienvenida / h1 - Titulo
+
+3 - Cada section de proyecto con id
+
+4 - La sección de proyectos / debe contener a menos un elemento con class="project-tile"
+
+5 - La sección de proyectos debe tener al menos un link.
+
+6 - navbar con id="navbar"
+
+7 - navbar debe tener links para navegar por la pagina
+
+8 - Debe tener un link id="profile-link" que te lleve a GitHub o FCC en una nueva pagina.
+
+9 - Debe tener al menos un media query.
+
+User Story #10: The height of the welcome section should be equal to the height of the viewport.
+
+10 - La altura de la sección de bienvenida debe ser igual al viewport.
+
+11 - navbar debe estar siempre hasta arriba.
+
+
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+3 - Cada section de proyecto con id
+6 - navbar con id="navbar"
+7 - navbar debe tener links para navegar por la pagina
+11 - navbar debe estar siempre hasta arriba. - CSS.
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+
+1 - id="welcome-section"
+
+2 - Pagina de bienvenida / h1 - Titulo
+
+10 - La altura de la sección de bienvenida debe ser igual al viewport. - CSS.
+
+
+
+
+
+
+---------------------------------------------------------------------------------------
+La sección de proyectos
+---------------------------------------------------------------------------------------
+3 - Cada section de proyecto con id
+
+4 - debe contener a menos un elemento con class="project-tile"
+
+5 - La sección de proyectos debe tener al menos un link.
+
+
+
+
+
+
+---------------------------------------------------------------------------------------
+3 - Cada section de proyecto con id
+
+
+
+---------------------------------------------------------------------------------------
+
+8 - Debe tener un link id="profile-link" que te lleve a GitHub o FCC en una nueva pagina.
+
+9 - Debe tener al menos un media query.
+
+
+
+
+
+
+

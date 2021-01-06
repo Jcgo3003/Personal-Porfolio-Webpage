@@ -1,0 +1,131 @@
+html {
+  scroll-padding-top: 100px; 
+}
+
+body {
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  background: #CAD7DE;
+}
+
+nav#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background: red;
+  border: 3px solid #31342B;
+  color: #31342B;
+  // z-index: 10;
+  
+  img {
+    margin-top: -12px;
+    margin-left: 25px;
+    max-width: 200px;
+  }
+
+  ul {
+    margin-top: 20px;
+    margin-right: 50px;
+    padding: 10px 10px;
+    float: right;
+
+    li {
+      display: inline;
+      list-style: none;
+      padding: 10px 40px;
+
+      a {
+        font-size: 16px;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+div#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+
+  h1 {
+    font-size: 3rem;
+    color: #29024F;
+    margin-bottom: 0px;
+  } 
+
+  p {
+    font-size: 1rem;
+    color: #31342B;
+  }
+}
+
+div#proyectos {
+  height: 80vh;
+  width: 90vw;
+  margin: 25px auto 25px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: #eee;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid black;
+
+
+  div.project-tile {
+    height: 30vh;
+    width: 30%;
+    border: 3px solid blue;
+    background: red;
+  }
+}
+
+div#contact {
+  height: 65vh;
+  width: 90vw;
+  margin: 25px auto 50px auto;
+  border: 2px solid black;
+  transition: all 0.5s ease-in-out;
+
+  a#profile-link {
+    text-decoration: none;
+  }
+}
+
+footer {
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center ;
+  justify-content: space-between;
+  background: #31342B;
+  color: #eee;
+
+
+  div {
+
+    width: 500px;
+    margin-left: auto;
+    margin-left: auto;
+
+    p {
+      color: #CAD7DE;
+    }
+  }
+
+}
+
