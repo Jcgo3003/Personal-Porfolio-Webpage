@@ -1,3 +1,61 @@
+@media (max-width: 800px) {
+  #menu-btn {
+    position: fixed;
+    z-index: 12;
+    top: 20px;
+    left: 35px;
+    width: 35px;
+    height: 35px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #menu-btn #burger {
+    position: fixed;
+    top: 35px;
+    left: 35px;
+    width: 35px;
+    height: 5px;
+    background: white;
+    border: 1px solid black;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  #menu-btn #burger::before {
+    content: "";
+    position: fixed;
+    top: 25px;
+    width: 35px;
+    height: 5px;
+    background: white;
+    border: 1px solid black;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #menu-btn #burger::after {
+    content: '';
+    position: fixed;
+    top: 45px;
+    width: 25px;
+    height: 5px;
+    background: white;
+    border: 1px solid black;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #menu-btn #burger.open {
+    background: transparent;
+  }
+  #menu-btn #burger.open::before {
+    -webkit-transform: rotate(45deg) translate(8px, 8px);
+            transform: rotate(45deg) translate(8px, 8px);
+  }
+  #menu-btn #burger.open::after {
+    width: 35px;
+    -webkit-transform: rotate(-45deg) translate(6px, -7px);
+            transform: rotate(-45deg) translate(6px, -7px);
+  }
+}
+
 html {
   scroll-padding-top: 100px;
 }
@@ -86,6 +144,12 @@ div#welcome-section p {
   color: #31342B;
 }
 
+#head-work {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 div#proyectos {
   height: 80vh;
   width: 90vw;
@@ -158,5 +222,86 @@ footer div {
 
 footer div p {
   color: #CAD7DE;
+}
+
+@media (max-width: 800px) {
+  nav#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background: red;
+    border: 2px solid #31342B;
+    color: #31342B;
+  }
+  nav#navbar img {
+    height: auto;
+    max-width: 200px;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+  }
+  nav#navbar ul {
+    border: 2px solid black;
+    top: 65px;
+    left: 0px;
+  }
+  nav#navbar ul.open {
+    color: black;
+    position: absolute;
+    background: lightblue;
+    width: 100%;
+    z-index: 1;
+  }
+  nav#navbar ul li {
+    list-style: none;
+    padding: 10px 40px;
+    border: 2px solid black;
+  }
+  nav#navbar ul li a {
+    font-size: 16px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #head-work {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -5px;
+  }
+  div#proyectos {
+    height: auto;
+    min-height: 100% !important;
+    width: 90vw;
+    margin: 25px auto 25px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #eee;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid black;
+  }
+  div#proyectos div.project-tile {
+    height: 50vh;
+    width: 80vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid blue;
+    background: red;
+  }
 }
 /*# sourceMappingURL=main.css.map */
