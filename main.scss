@@ -1,7 +1,7 @@
 @import "menu";
 
 html {
-  scroll-padding-top: 100px; 
+  scroll-padding-top: 120px; 
 }
 
 body {
@@ -136,6 +136,10 @@ footer {
 }
 
 @media (max-width:800px){
+  html {
+    scroll-padding-top: 80px; 
+  }
+
   nav#navbar {
     position: fixed;
     top: 0;
@@ -152,16 +156,12 @@ footer {
       margin-top: -25px;
       margin-left: auto;
       margin-right: auto;
-      border: 2px solid black;
+      display: table-column;
     }
   
     ul {
-      // margin-top: 20px;
-      // margin-right: 50px;
-      // padding: 10px 10px;
-      // display: none;
-      border: 2px solid black;
-      top: 65px;
+      display: none;
+      top: 40px;
       left: 0px;
       &.open {
         color: black;
@@ -172,15 +172,21 @@ footer {
       }
   
       li {
-
+        display: block;
         list-style: none;
         padding: 10px 40px;
-        border: 2px solid black;
+        text-align: center;
+        &.open {
+          border-bottom: 1px solid blue;
+        }
   
         a {
           font-size: 16px;
-          // text-decoration: none;
+          text-decoration: none;
           transition: all 0.5s ease-in-out;
+          &.open {
+            border-bottom: 2px solid red;
+          }
         }
       }
     }

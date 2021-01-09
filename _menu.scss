@@ -1,59 +1,56 @@
-
-@media (max-width: 800px){
+@media (max-width: 800px) {
   #menu-btn {
-    position: fixed;
-    z-index: 12;
-    top: 20px;
-    left: 35px;
-    width: 35px;
-    height: 35px;
-    transition: all 0.5s ease-in-out;
-  
-      #burger {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 35px;
+  width: 35px;
+  height: 35px;
+  transition: all 0.5s ease-in-out;
+
+    #burger {
+      position: fixed;
+      top: 35px;
+      left: 35px;
+      width: 35px;
+      height: 4px;
+      background: white;
+      transition: all 0.1s ease-in-out;
+
+      &::before {
+        content: "";
         position: fixed;
-        top: 35px;
-        left: 35px;
+        top: 25px;
         width: 35px;
-        height: 5px;
+        height: 4px;
         background: white;
-        border: 1px solid black;
-        transition: all 0.1s ease-in-out;
-  
+        transition: all 0.3s ease-in-out;
+      }
+
+      &::after {
+        content: '';
+        position: fixed;
+        top: 45px;
+        width: 25px;
+        height: 4px;
+        background: white;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &.open {
+        background: transparent;
+        border: transparent;
+
         &::before {
-          content: "";
-          position: fixed;
-          top: 25px;
-          width: 35px;
-          height: 5px;
-          background: white;
-          border: 1px solid black;
-          transition: all 0.3s ease-in-out;
+          transform: rotate(45deg) translate(8px, 8px);
         }
   
         &::after {
-          content: '';
-          position: fixed;
-          top: 45px;
-          width: 25px;
-          height: 5px;
-          background: white;
-          border: 1px solid black;
-          transition: all 0.3s ease-in-out;
+          width: 35px;
+          transform: rotate(-45deg) translate(6px, -7px);
         }
-  
-        &.open {
-          background: transparent;
-  
-          &::before {
-            transform: rotate(45deg) translate(8px, 8px);
-          }
-    
-          &::after {
-            width: 35px;
-            transform: rotate(-45deg) translate(6px, -7px);
-          }
-  
-        }
+
       }
     }
+  }
 }

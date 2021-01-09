@@ -1,7 +1,7 @@
 @media (max-width: 800px) {
   #menu-btn {
     position: fixed;
-    z-index: 12;
+    z-index: 1;
     top: 20px;
     left: 35px;
     width: 35px;
@@ -14,9 +14,8 @@
     top: 35px;
     left: 35px;
     width: 35px;
-    height: 5px;
+    height: 4px;
     background: white;
-    border: 1px solid black;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
   }
@@ -25,9 +24,8 @@
     position: fixed;
     top: 25px;
     width: 35px;
-    height: 5px;
+    height: 4px;
     background: white;
-    border: 1px solid black;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
@@ -36,14 +34,14 @@
     position: fixed;
     top: 45px;
     width: 25px;
-    height: 5px;
+    height: 4px;
     background: white;
-    border: 1px solid black;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
   #menu-btn #burger.open {
     background: transparent;
+    border: transparent;
   }
   #menu-btn #burger.open::before {
     -webkit-transform: rotate(45deg) translate(8px, 8px);
@@ -57,7 +55,7 @@
 }
 
 html {
-  scroll-padding-top: 100px;
+  scroll-padding-top: 120px;
 }
 
 body {
@@ -225,6 +223,9 @@ footer div p {
 }
 
 @media (max-width: 800px) {
+  html {
+    scroll-padding-top: 80px;
+  }
   nav#navbar {
     position: fixed;
     top: 0;
@@ -241,11 +242,11 @@ footer div p {
     margin-top: -25px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid black;
+    display: table-column;
   }
   nav#navbar ul {
-    border: 2px solid black;
-    top: 65px;
+    display: none;
+    top: 40px;
     left: 0px;
   }
   nav#navbar ul.open {
@@ -256,14 +257,22 @@ footer div p {
     z-index: 1;
   }
   nav#navbar ul li {
+    display: block;
     list-style: none;
     padding: 10px 40px;
-    border: 2px solid black;
+    text-align: center;
+  }
+  nav#navbar ul li.open {
+    border-bottom: 1px solid blue;
   }
   nav#navbar ul li a {
     font-size: 16px;
+    text-decoration: none;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+  }
+  nav#navbar ul li a.open {
+    border-bottom: 2px solid red;
   }
   #head-work {
     font-size: 20px;
