@@ -55,7 +55,7 @@
 }
 
 html {
-  scroll-padding-top: 120px;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -149,9 +149,9 @@ div#welcome-section p {
 }
 
 div#proyectos {
-  height: 80vh;
+  height: 65vh;
   width: 90vw;
-  margin: 25px auto 25px auto;
+  margin: 0px auto 25px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,7 +173,7 @@ div#proyectos {
 }
 
 div#proyectos div.project-tile {
-  height: 30vh;
+  height: 25vh;
   width: 30%;
   border: 3px solid blue;
   background: red;
@@ -186,10 +186,59 @@ div#contact {
   border: 2px solid black;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div#contact a#profile-link {
   text-decoration: none;
+}
+
+div#contact #picture {
+  width: 50%;
+  /* width of container */
+  height: auto;
+  /* height of container */
+  text-align: center;
+  border: 2px solid black;
+}
+
+div#contact #picture img {
+  width: 100%;
+  /* width of container */
+  height: auto;
+  /* height of container */
+  max-width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 60%;
+}
+
+div#contact #text-contact {
+  width: 40%;
+  height: 200px;
+  border: 2px solid black;
+}
+
+div#contact #text-contact p {
+  color: darkslateblue;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#wave {
+  margin-top: -260px;
+  z-index: -1;
 }
 
 footer {
@@ -198,6 +247,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: -10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -274,6 +324,35 @@ footer div p {
   nav#navbar ul li a.open {
     border-bottom: 2px solid red;
   }
+  div#welcome-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  div#welcome-section h1 {
+    font-size: 3rem;
+    color: #29024F;
+    margin-bottom: 0px;
+  }
+  div#welcome-section p {
+    font-size: 1.5rem;
+    color: #b10000;
+  }
   #head-work {
     font-size: 20px;
     margin-left: auto;
@@ -311,6 +390,61 @@ footer div p {
     margin-bottom: 20px;
     border: 3px solid blue;
     background: red;
+  }
+  div#contact {
+    height: 80vh;
+    width: 90vw;
+    margin: 25px auto 50px auto;
+    border: 2px solid black;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div#contact a#profile-link {
+    text-decoration: none;
+  }
+  div#contact #picture {
+    width: 50%;
+    /* width of container */
+    height: auto;
+    /* height of container */
+    text-align: center;
+    border: 2px solid black;
+  }
+  div#contact #picture img {
+    width: 100%;
+    /* width of container */
+    height: auto;
+    /* height of container */
+    max-width: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 60%;
+  }
+  div#contact #text-contact {
+    width: 80%;
+    height: 200px;
+    border: 2px solid black;
+  }
+  div#contact #text-contact p {
+    color: darkslateblue;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #wave {
+    margin-top: -150px;
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=main.css.map */

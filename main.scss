@@ -1,7 +1,7 @@
 @import "menu";
 
 html {
-  scroll-padding-top: 120px; 
+  scroll-padding-top: 100px; 
 }
 
 body {
@@ -79,9 +79,9 @@ div#welcome-section {
 }
 
 div#proyectos {
-  height: 80vh;
+  height: 65vh;
   width: 90vw;
-  margin: 25px auto 25px auto;
+  margin: 0px auto 25px auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -93,7 +93,7 @@ div#proyectos {
 
 
   div.project-tile {
-    height: 30vh;
+    height: 25vh;
     width: 30%;
     border: 3px solid blue;
     background: red;
@@ -106,16 +106,53 @@ div#contact {
   margin: 25px auto 50px auto;
   border: 2px solid black;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
 
   a#profile-link {
     text-decoration: none;
   }
+
+  #picture {
+    width: 50%; /* width of container */
+    height: auto; /* height of container */
+    text-align: center;
+    border: 2px solid black;
+   
+    img {
+    width: 100%; /* width of container */
+    height: auto; /* height of container */
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 60%;
+    }
+  }
+
+  #text-contact {
+    width: 40%;
+    height: 200px;
+    border: 2px solid black;
+    p {
+      color: darkslateblue;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
+
+#wave {
+  margin-top: -260px;
+  z-index: -1;
 }
 
 footer {
   height: 15vh;
   width: 100vw;
   display: flex;
+  margin-top: -10px;
   flex-direction: row;
   align-items: center ;
   justify-content: space-between;
@@ -124,7 +161,6 @@ footer {
 
 
   div {
-
     width: 500px;
     margin-left: auto;
     margin-left: auto;
@@ -192,6 +228,27 @@ footer {
     }
   }
   
+  div#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+  
+    h1 {
+      font-size: 3rem;
+      color: #29024F;
+      margin-bottom: 0px;
+    } 
+  
+    p {
+      font-size: 1.5rem;
+      color: #b10000;
+    }
+  }
 
 
   #head-work {
@@ -226,6 +283,54 @@ footer {
       background: red;
     }
   }
+
+  div#contact {
+    height: 80vh;
+    width: 90vw;
+    margin: 25px auto 50px auto;
+    border: 2px solid black;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  
+  
+    a#profile-link {
+      text-decoration: none;
+    }
+  
+    #picture {
+      width: 50%; /* width of container */
+      height: auto; /* height of container */
+      text-align: center;
+      border: 2px solid black;
+     
+      img {
+      width: 100%; /* width of container */
+      height: auto; /* height of container */
+      max-width: 300px;
+      object-fit: cover;
+      border-radius: 60%;
+      }
+    }
+  
+    #text-contact {
+      width: 80%;
+      height: 200px;
+      border: 2px solid black;
+      p {
+        color: darkslateblue;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+  #wave {
+    margin-top: -150px;
+    z-index: -1;
+  }
+
 }
 
 // Lo mas importante que aprendi haciendo este proyecto es:
