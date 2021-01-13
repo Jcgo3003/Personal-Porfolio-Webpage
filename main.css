@@ -173,10 +173,49 @@ div#proyectos {
 }
 
 div#proyectos div.project-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 25vh;
   width: 30%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
   border: 3px solid blue;
   background: red;
+}
+
+div#proyectos div.project-tile img {
+  width: 20vw;
+  height: auto;
+}
+
+div#proyectos div.project-tile iframe {
+  width: 50%;
+  height: auto;
+  display: table-cell;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#proyectos div.project-tile #github {
+  width: 10vw;
+  display: table-cell;
+}
+
+div#proyectos div.project-tile a {
+  text-decoration: none;
+  color: darkblue;
 }
 
 div#contact {
@@ -210,7 +249,6 @@ div#contact #picture {
   height: auto;
   /* height of container */
   text-align: center;
-  border: 2px solid black;
 }
 
 div#contact #picture img {
@@ -227,17 +265,18 @@ div#contact #picture img {
 div#contact #text-contact {
   width: 40%;
   height: 200px;
-  border: 2px solid black;
 }
 
 div#contact #text-contact p {
   color: darkslateblue;
+  font-family: 'Tangerine', serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 #wave {
-  margin-top: -260px;
+  margin-top: -230px;
   z-index: -1;
 }
 
@@ -364,8 +403,8 @@ footer div p {
     min-height: 100% !important;
     width: 90vw;
     margin: 25px auto 25px auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -390,6 +429,18 @@ footer div p {
     margin-bottom: 20px;
     border: 3px solid blue;
     background: red;
+  }
+  div#proyectos div.project-tile img {
+    width: 70vw;
+    height: auto;
+  }
+  div#proyectos div.project-tile iframe {
+    width: 80%;
+    height: auto;
+  }
+  div#proyectos div.project-tile #github {
+    width: 45vw;
+    display: table-cell;
   }
   div#contact {
     height: 80vh;
@@ -420,7 +471,6 @@ footer div p {
     height: auto;
     /* height of container */
     text-align: center;
-    border: 2px solid black;
   }
   div#contact #picture img {
     width: 100%;
@@ -431,16 +481,16 @@ footer div p {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 60%;
+    margin-top: 20px;
   }
   div#contact #text-contact {
     width: 80%;
     height: 200px;
-    border: 2px solid black;
   }
   div#contact #text-contact p {
     color: darkslateblue;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 30px;
   }
   #wave {
     margin-top: -150px;

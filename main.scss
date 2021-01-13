@@ -93,10 +93,42 @@ div#proyectos {
 
 
   div.project-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 25vh;
     width: 30%;
+    color: white;
+    font-size: 20px;
+
+    text-align: center;
     border: 3px solid blue;
     background: red;
+
+    img {
+      width: 20vw;
+      height: auto;
+    }
+    
+    iframe {
+      width: 50%;
+      height: auto;
+      display: table-cell;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #github {
+      width: 10vw;
+      display: table-cell;
+    }
+
+    a {
+      text-decoration: none;
+      color: darkblue;
+    }
+
   }
 }
 
@@ -120,7 +152,6 @@ div#contact {
     width: 50%; /* width of container */
     height: auto; /* height of container */
     text-align: center;
-    border: 2px solid black;
    
     img {
     width: 100%; /* width of container */
@@ -134,17 +165,19 @@ div#contact {
   #text-contact {
     width: 40%;
     height: 200px;
-    border: 2px solid black;
+
     p {
       color: darkslateblue;
+      font-family: 'Tangerine', serif;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 40px;
+      text-shadow: 4px 4px 4px #aaa;
     }
   }
 }
 
 #wave {
-  margin-top: -260px;
+  margin-top: -230px;
   z-index: -1;
 }
 
@@ -263,8 +296,8 @@ footer {
     min-height: 100% !important;
     width: 90vw;
     margin: 25px auto 25px auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: column;
     background: #eee;
@@ -281,6 +314,23 @@ footer {
       margin-bottom: 20px;
       border: 3px solid blue;
       background: red;
+
+      img {
+        width: 70vw;
+        height: auto;
+      }
+      
+      iframe {
+        width: 80%;
+        height: auto;
+      }
+  
+      #github {
+        width: 45vw;
+        display: table-cell;
+
+      }
+
     }
   }
 
@@ -304,7 +354,7 @@ footer {
       width: 50%; /* width of container */
       height: auto; /* height of container */
       text-align: center;
-      border: 2px solid black;
+
      
       img {
       width: 100%; /* width of container */
@@ -312,25 +362,27 @@ footer {
       max-width: 300px;
       object-fit: cover;
       border-radius: 60%;
+      margin-top: 20px;
       }
     }
   
     #text-contact {
       width: 80%;
       height: 200px;
-      border: 2px solid black;
+
+
       p {
         color: darkslateblue;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 30px;
       }
     }
   }
+
   #wave {
     margin-top: -150px;
     z-index: -1;
   }
-
 }
 
 // Lo mas importante que aprendi haciendo este proyecto es:
